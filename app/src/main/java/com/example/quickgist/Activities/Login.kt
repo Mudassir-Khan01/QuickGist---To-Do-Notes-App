@@ -1,6 +1,5 @@
 package com.example.quickgist.Activities
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,13 +7,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
-import com.example.quickgist.R
+import com.example.quickgist.Adapters.Note
 import com.example.quickgist.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
@@ -53,7 +51,7 @@ class Login : AppCompatActivity() {
                 auth.signInWithCredential(credential).addOnCompleteListener{
                     if(it.isSuccessful){
                         //  Toast.makeText(this,"DOne",Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(this,NoteActivity::class.java))
+                        startActivity(Intent(this, Note::class.java))
                     }else{
                         Toast.makeText(this,"FAILED",Toast.LENGTH_SHORT).show()
 
@@ -97,7 +95,7 @@ class Login : AppCompatActivity() {
     private fun checkuser() {
         val firebaseuser=auth.currentUser
         if(firebaseuser!=null) {
-            startActivity(Intent(this, NoteActivity::class.java))
+            startActivity(Intent(this, Note::class.java))
             overridePendingTransition(0, 0)
             finish()
         }else{

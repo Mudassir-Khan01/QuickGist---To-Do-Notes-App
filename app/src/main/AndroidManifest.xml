@@ -17,7 +17,7 @@
 
 
         <activity
-            android:name=".Activities.NoteActivity"
+            android:name=".Adapters.Note"
             android:exported="false" />
         <activity
             android:name=".Activities.Login"
