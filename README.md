@@ -1,4 +1,4 @@
-###Quick Gist 📝
+# Quick Gist 📝
 
 ### Overview :
 Quick Gist is an Android To-Do Notes application designed for efficient note-taking and task management. It features Firebase Authentication, Firestore, and Real-Time Database for secure and seamless CRUD operations. The app also integrates Markdown support and other advanced UI components for a rich user experience.### Features :
