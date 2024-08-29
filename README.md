@@ -12,8 +12,9 @@ Quick Gist is an Android To-Do Notes application designed for efficient note-tak
  ### Screenshots : 
  
  <table align="center">
- ![Screenshot 2024-08-30 002058](https://github.com/user-attachments/assets/aebf1011-fc66-4eac-840f-e9bc059f50c4)
- ![Screenshot 2024-08-30 002511](https://github.com/user-attachments/assets/844223b1-69e9-447c-837e-4b235aba1624)
+![Screenshot 2024-08-30 002058](https://github.com/user-attachments/assets/7af88786-cb6b-4f48-b67a-889b90d2d551)
+
+![Screenshot 2024-08-30 002511](https://github.com/user-attachments/assets/e6e1c701-9795-491b-8486-55f1f68a836c)
 
 </table><br><br>
 
